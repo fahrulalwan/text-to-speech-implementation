@@ -10,5 +10,11 @@ export const Controls = ({
   loadNewContent: () => void;
   state: PlayingState;
 }) => {
-  return <div></div>;
+  return (
+    <div>
+      <button onClick={play}>Play</button>
+      <button onClick={pause}>Pause</button>
+      <button onClick={loadNewContent}>Fetch New Content</button>
+    </div>
+  );
 };
